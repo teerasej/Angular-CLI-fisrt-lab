@@ -1,3 +1,20 @@
+
 <h1>
-  {{title}}
+  {{ title }} {{ username }}
 </h1>
+<div>
+  <a routerLink="/dashboard">Dashboard</a>
+   | <a routerLink="/employee/create">Add</a>
+</div>
+<router-outlet></router-outlet>
+<!--<input type="text" [(ngModel)]="username">
+<input type="password" [(ngModel)]="password">
+<button (click)="signIn(username, password)">Sign In</button>
+
+
+<div>
+  <input type="number" [(ngModel)]="firstNumber"> 
+  + <input type="number" [(ngModel)]="secondNumber"> = {{ result }}
+  <button (click)="calculate(firstNumber, secondNumber)">Calculate</button>
+</div>-->
+
